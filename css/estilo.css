@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
-
- } 
+} 
 body{
     background-color: rgb(17, 13, 41);
     line-height: 25px;
@@ -176,6 +175,7 @@ span{
     color: white;
     margin: 5px;
     
+    
 }
 .sobremi{
     display: flex;
@@ -183,6 +183,7 @@ span{
     justify-content: center;
     background-size: cover;
     background-position: center;
+    background-image: url();
     height: 80vh;
 }
 .sobremi h2{
@@ -211,7 +212,7 @@ span{
 }
 .misproyectos img{
     width: 25%;
-    border-radius: 20%;
+    border:10px;
     padding: 50px;
 }
 .proyecto h2{
@@ -222,6 +223,62 @@ margin: 5%;
 }
 footer{
     height: 100vh;
+}
+footer{
     display: flex;
-    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.formconteiner{
+    margin-top: 50px;
+    text-align: center;
+}
+form{
+    padding: 20px;
+    background:linear-gradient(
+        50deg,
+        rgb(49, 63, 135)0%,
+        rgb(49, 63, 135)50%
+        rgb(49, 63, 135)100%
+    );
+    border-radius: 15px;
+    box-shadow:0 0 20px #3f5794;
+    width: 550px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.formgroup{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    margin-bottom: 40px;
+}
+.formcontent{
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    padding: 20px 15px;
+    background-color: #3f5794;
+    border: 0;
+    outline: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+}
+::placeholder{
+    color: #e7e9ec;
+    font-size: 16px;
+}
+textarea{
+    margin-bottom: 40px;
+}
+.btnfotm{
+    padding: 8px 20px 8px 20px;
+    height: 30px;
+    align-self: center;
+    text-transform: capitalize;
+    color: white;
+    font-size:16px ;
 }

@@ -85,35 +85,43 @@
       <section class="proyecto">
          <h2>Mis <span>Proyectos</span></h2>
        <div class="misproyectos">
-         <img src="img/pantalla.jpg" alt="">
-         <img src="img/pantalla.jpg" alt="">
-         <img src="img/pantalla.jpg" alt="">   
-         <img src="img/pantalla.jpg" alt="">
-         <img src="img/pantalla.jpg" alt="">
-         <img src="img/pantalla.jpg" alt="">
+         <img src="img/union.jpg" alt="">
+         <img src="img/sitioweb.jpg" alt="">
+         <img src="img/uxsitio.jpg" alt="">   
+         <img src="img/title.jpg" alt="">
+         <img src="img/pagina.jpg" alt="">
+         <img src="img/web.jpg" alt="">
         </div>
          
       </section>
        </main>
       
       <footer>
-         <div class="footer">
-          <h2>Contactas<span>me</span></h2> 
-          <form action="">
-            <label for="">Nombre/s</label>
-            <input type="text">
-            <label for="">Apellido/s</label>
-            <input type="text">
-            <label for="">Numero de telefono</label>
-            <input type="text">
-            <label for="">Direccion de correo</label>
-            <input type="text">
-            <label for="">Ti direccion</label>
-            <input type="text">
-          </form> 
-      
+         <section>
+         <div class="formconteiner">
+          <form method="post" autocomplete="off" >
+         <div class="formgroup">
+            <div class="formcontent">
+               <input  type="text" name="Nombres" id="Nombres" placeholder="Ingrese su nombre">
+            </div>           
+            <div class="formcontent">
+               <input  type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese su apellido">    
+            </div>
          </div>
-         
+         <div class="formgroup">
+            <div class="formcontent">
+               <input  type="number" name="telefono" id="Telefono" placeholder="Ingrese su telefono">
+            </div>
+            <div class="formcontent">
+                <input  type="email" name="Correo" id="Correo" placeholder="Ingrese su correo" >  
+            </div>  
+         </div>                
+               <textarea name="Mensaje" id="mensaje" placeholder="Ingrese su consulta"></textarea>
+               <button>contactarme</button> 
+          
+         </form> 
+         </div>
+      </section>
       </footer>  
 </body>
 </html>
