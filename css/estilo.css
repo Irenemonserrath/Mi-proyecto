@@ -257,11 +257,11 @@ span{
     justify-content: flex-start;
 }
 .misproyectos img{
-    margin-left: 50px;
-    width: 300px;
+    margin-left: 70px;
+    width: 23%;
     height: 200px;
     border-radius: 20%;
-    padding: 25px;
+    padding: 20px 10px;
 }
 .proyecto h2{
 color: white;
