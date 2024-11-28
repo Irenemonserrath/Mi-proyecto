@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi pagina web</title>
+    <title>Mi Pagina UTN</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
     <header>
         <div class="logo">
-          <a href="#">Portfolio.</a>
+          <a href="#logo">Portfolio.</a>
         </div>
-        <nav class="menu">
-           <a href="">Inicio</a>
-           <a href="">Acerca de</a>
-           <a href="">Proyectos</a>
-           <a href="">Contacto</a>
+        <nav class="#menu" id="menu">
+           <a href="#menu">Inicio</a>
+           <a href="#acerca">Acerca de</a>
+           <a href="#habilidades">Habilidades</a>
+           <a href="#proyecto">Proyectos</a>
+           <a href="#footer">Contacto</a>
           </nav>
        </header>
        <main>
@@ -37,18 +38,17 @@
          <div class="img">
             <img src="img/irene.jpeg" alt="">
          </div>
-         <div class="acerca">
+         <div class="acerca" id="acerca">
             <h2>Acerca de <span>Mi</span></h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit commodi recusandae</p>
-         <p><span>Herramientas:</span>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iste aspernatur ullam nisi consequuntur at tempora.</p>
-         <p><span>Comentarios:</span>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis illum animi eius debitis voluptatem recusandae fugit sapiente voluptates corrupti alias placeat.</p>
+         <p>Me considero una persona respondable y con gran disposicion para el trabajo en equipo.</p>
+         <p> <span>Experiencias: </span> Cuento con 3 años de experiencias en el rubro textil. Manejo todo tipo de maquinas industriales</p>
+         <p> <span>Comentarios: </span>Realice cursos sobre molderia industrial y Tambien estoy formandome para red y ciberseguridad</p>
             <button>ver mas</button>
          </div>
       
       </section>
-      <section class="contenido"> 
-         
-         <h2>Mis <span>Habilidades</span></h2>
+      <section class="contenido" id="habilidades"> 
+         <h2>Mis <span> Habilidades</span></h2>
          <div class="conteiner">
             <div class="card">
                <div class="icono">
@@ -93,8 +93,8 @@
          </div>
          </div>
       </section>
-      <section class="proyecto">
-         <h2>Mis <span>Proyectos</span></h2>
+      <section class="proyecto" id="proyecto">
+         <h2>Mis <span> Proyectos </span></h2>
        <div class="misproyectos">
          <img src="img/union.jpg" alt="">
          <img src="img/sitioweb.jpg" alt="">
@@ -108,32 +108,31 @@
        </main>
       
       <footer>
-         <section class="footer">
+         <section class="footer" id="footer">
          <div class="formconteiner">
           <form method="post" autocomplete="off" >
-         <div class="formgroup">
-            <div class="formcontent">
-               <input  type="text" name="Nombres" id="Nombres" placeholder="Ingrese su nombre">
+            <div class="formgroup">
+               <div class="formcontent">
+                 <input  type="text" name="Nombres" id="Nombres" placeholder="Ingrese su nombre">
+               </div>           
+               <div class="formcontent">
+                 <input  type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese su apellido">    
+               </div>
+            </div>
+            <div class="formgroup">
+               <div class="formcontent">
+                 <input  type="number" name="telefono" id="Telefono" placeholder="Ingrese su telefono">
+               </div>
+               <div class="formcontent">
+                 <input  type="email" name="Correo" id="Correo" placeholder="Ingrese su correo" >  
+               </div>  
             </div>           
-            <div class="formcontent">
-               <input  type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese su apellido">    
-            </div>
-         </div>
-         <div class="formgroup">
-            <div class="formcontent">
-               <input  type="number" name="telefono" id="Telefono" placeholder="Ingrese su telefono">
-            </div>
-            <div class="formcontent">
-                <input  type="email" name="Correo" id="Correo" placeholder="Ingrese su correo" >  
-            </div>  
-         </div> 
-                       
-               <textarea name="Mensaje" id="mensaje" placeholder="Ingrese su consulta"></textarea>
-            <div>  
-                <button >contactarme</button>
-            </div>
+                 <textarea name="Mensaje" id="mensaje" placeholder="Ingrese su consulta"></textarea>
+               <div>  
+                 <button >contactarme</button>
+               </div>
           
-         </form> 
+          </form> 
          </div>
       </section>
       </footer>  
