@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
 } 
 body{
     background-color: rgb(17, 13, 41);
@@ -10,7 +11,7 @@ body{
  }
 .hero{
 background-color: rgb(17, 13, 41);
-height: 70vh;
+height: 90vh;
 display: flex;
 justify-content:space-between;
 align-items: center;
@@ -19,7 +20,7 @@ margin: 20px;
 .descripcion h1{
     text-align:start;
     padding: 0;
-    font-size: 40px;
+    font-size: 50px;
     color: white;
     margin: 40px;
 
@@ -27,7 +28,7 @@ margin: 20px;
 .descripcion h2{
     text-align:start;
     padding: 0;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     margin: 40px;
 }
@@ -42,17 +43,24 @@ margin: 20px;
     display: flex;
     justify-content: start;
     text-align: center;
-    padding: 5px;
+    font-size: 20px;
+    height: 40px;
     margin: 40px;
 }
-
+.contenido svg{
+    width: 30px;
+    height: 30px;
+    color: #00bfff;
+}
 
 .menu{
     display: flex;
     min-height: 20px;
     background-color:rgb(17, 13, 41) ;
-    padding: 10px ;
+    padding:0;
     align-items:center;
+    font-size: 20px;
+
 }
 header{
     display: flex;
@@ -62,6 +70,12 @@ header{
     padding: 10px;
     align-items: center;
 }
+header .logo{
+    margin: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 25px;
+}
 a{
     text-decoration: none;
     color: rgb(250, 250, 250);
@@ -70,7 +84,7 @@ a{
 }
 nav a{
     font-weight: 600;
-    padding-right: 70px;
+    padding-right: 50px;
 }
 nav a:hover{
     color: red;
@@ -83,13 +97,15 @@ nav a:hover{
         padding: 10px 0px;
     }
 }
-.charla{
+.cv{
     display: flex;
     justify-content: center;
+    font-size: 20px;
+    color: white;
 }
 button{
     background-color: rgb(88, 179, 240);
-    color: rgb(5, 5, 5);
+    color: white;
     padding: 8px 20px 8px 20px;
     font-size: 16px;
     border: none;
@@ -101,19 +117,24 @@ button{
 button:hover{
     background-color:rgb(255, 255, 255);
     transform:scale(1.1);
+    color: black;
 }
 .hero img{
     width: 20%;
-    border-radius: 5px;
+    border-radius: 30px;
     margin: 70px;
 }
 .hero img:hover{
-    box-shadow:10px 10px 10px 10px rgb(13, 164, 234); 
+    box-shadow:10px 10px 10px 10px rgb(13, 164, 234);
 }
 
 .sobremi img{
-    width: 50%;
-    border-radius: 5px;
+    display: flex;
+    margin-left: 50px;
+    height: 350px;
+    width: 240px;
+    border-radius: 30px;
+
 
 }
 .contenido{
@@ -126,19 +147,24 @@ button:hover{
     display: flex;
     justify-content: center;
     margin: 5%;
-
+    hyphens: manual;
 
 }
 .conteiner{
     display: flex;
     gap: 20px;
 }
+.conteiner h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 3px;
+}
 .card{
     justify-content: center;
     padding: 25px;
     border: 2px solid #00bfff;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 20px;
     background: #2c354b;
     width: 25%;
 
@@ -151,6 +177,10 @@ button:hover{
     text-align: center;
     width:30%;
     height:30px;
+}
+.conteiner .card{
+    display: block;
+    margin: 40px;
 }
 .card p{
 padding: 10px;
@@ -169,23 +199,29 @@ span{
     color:rgb(13, 164, 234);
 }
 .sobremi{
-    text-align:center;
-    padding: 0px 30px 20px 0px;
     font-size: 20px;
     color: white;
-    margin: 5px;
+    margin: 10px;
     
     
 }
 .sobremi{
-    display: flex;
-    align-items: flex-end;
+    display:flex;
+    align-items:center;
     justify-content: center;
-    background-size: cover;
-    background-position: center;
-    background-image: url();
+    text-align: center;
     height: 80vh;
+
 }
+.sobremi{
+    background-image:url();
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+
+}
+
 .sobremi h2{
     text-align:center;
     padding: 0px 30px 20px 0px;
@@ -195,14 +231,24 @@ span{
 }
 .sobremi p{
     display: flex;
-    align-items: center;
     justify-content: flex-end;
     text-align:start;
     color: white;
     padding: 0px 30px 20px 0px;
 }
+.acerca p{
+    text-align: justify;
+    margin-left: 5px;
+}
+.acerca{
+    font-size: 20px;
+    font-stretch: expanded;
+    color: white;
+    text-shadow: 1px 1px #000;
+    padding: 0px 20px 0px 40px;
+}
 .acerca h2{
-    text-align: center;
+    text-align:start;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -211,9 +257,11 @@ span{
     justify-content: flex-start;
 }
 .misproyectos img{
-    width: 25%;
-    border:10px;
-    padding: 50px;
+    margin-left: 50px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20%;
+    padding: 25px;
 }
 .proyecto h2{
 color: white;
@@ -222,7 +270,7 @@ justify-content: center;
 margin: 5%;
 }
 footer{
-    height: 100vh;
+    height: 130vh;
 }
 footer{
     display: flex;
@@ -232,21 +280,18 @@ footer{
 .formconteiner{
     margin-top: 50px;
     text-align: center;
+    padding: 20px 20px 30px 20px;
 }
 form{
     padding: 20px;
-    background:linear-gradient(
-        50deg,
-        rgb(49, 63, 135)0%,
-        rgb(49, 63, 135)50%
-        rgb(49, 63, 135)100%
-    );
     border-radius: 15px;
-    box-shadow:0 0 20px #3f5794;
-    width: 550px;
+    width: 700px;
     text-align: left;
     display: flex;
     flex-direction: column;
+}
+form:hover{
+    box-shadow:0 0 20px rgb(13, 164, 234);
 }
 .formgroup{
     display: grid;
@@ -260,7 +305,7 @@ form{
 }
 input, textarea{
     padding: 20px 15px;
-    background-color: #3f5794;
+    background-color: #2c354b;
     border: 0;
     outline: none;
     border-radius: 15px;
@@ -272,13 +317,14 @@ input, textarea{
     font-size: 16px;
 }
 textarea{
+    height: 150px;
     margin-bottom: 40px;
 }
-.btnfotm{
-    padding: 8px 20px 8px 20px;
-    height: 30px;
-    align-self: center;
-    text-transform: capitalize;
-    color: white;
-    font-size:16px ;
+
+.btnfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
 }
